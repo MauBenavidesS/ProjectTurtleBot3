@@ -13,3 +13,6 @@ git submodule update
 
 # Build the project
 catkin_make
+
+# Source setup.bash
+source ./devel/setup.bash
