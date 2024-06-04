@@ -13,6 +13,3 @@ git submodule update
 
 # Build the project
 catkin_make
-
-# Source setup.bash
-source ~/ProjectTurtleBot3/devel/setup.bash
