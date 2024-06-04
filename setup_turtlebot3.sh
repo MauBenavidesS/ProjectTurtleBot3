@@ -15,4 +15,4 @@ git submodule update
 catkin_make
 
 # Source setup.bash
-source ./devel/setup.bash
+source ~/ProjectTurtleBot3/devel/setup.bash
