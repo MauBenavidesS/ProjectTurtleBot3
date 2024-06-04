@@ -8,9 +8,10 @@ This guide provides instructions on setting up and using the TurtleBot3 robot.
 
 Before getting started, ensure you have the following:
 
-* Ubuntu installed on your system
+* Ubuntu 20.04 (Focal Fossa) installed on your system
 * Git installed (`sudo apt-get install git`)
-* ROS (Robot Operating System) installed on your system
+* ROS Noetic (Robot Operating System) installed on your system
+* Gazebo
 
 ## Installation
 
