@@ -5,7 +5,9 @@
 source /opt/ros/noetic/setup.bash
 
 # Create Symbolic Link between python and python3
-sudo ln -sf /usr/bin/python3 /usr/bin/python
+sudo ln -sf /usr/bin/python3 /usr/bin/python 
+# To remove the symbolic link run the following command: 
+#         unlink /usr/bin/python
 
 # Initialize and update submodules
 git submodule init
