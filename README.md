@@ -20,11 +20,10 @@ To install TurtleBot3, follow these steps:
 
    ```bash
    git clone https://github.com/MauBenavidesS/TurtleBot3.git
-
-## Build
-git clone https://github.com/MauBenavidesS/TurtleBot3.git
-2. cd ~/TurtleBot3
-3. sudo ./setup_turtlebot3.sh
+2. Navigate to the TurtleBot3 directory:
+    cd ~/TurtleBot3
+3. Execute Setup Shell Script to build submodules and build package:
+    sudo ./setup_turtlebot3.sh
 
 ## Execute TurtleBot3
 - roslaunch turtlebot3_gazebo turtlebot3_world.launch
