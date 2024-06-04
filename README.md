@@ -17,16 +17,17 @@ Before getting started, ensure you have the following:
 To install TurtleBot3, follow these steps:
 
 1. Clone the TurtleBot3 repository:
-
    ```bash
    git clone https://github.com/MauBenavidesS/TurtleBot3.git
 2. Navigate to the TurtleBot3 directory:
     ```bash
     cd TurtleBot3/
-3. Execute Setup Shell Script to build submodules and build package:
+3. Execute Setup Shell Script to clone submodules and build package:
     ```bash
     sudo ./setup_turtlebot3.sh
-
+4. Source package's setup.bash
+    ```bash
+    source ./devel/setup.bash
 ## Execute TurtleBot3
 1. Launch turtlebot3_world.launch
     ```bash
