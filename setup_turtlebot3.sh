@@ -4,6 +4,9 @@
 # Source the ROS setup file
 source /opt/ros/noetic/setup.bash
 
+# Create Symbolic Link between python and python3
+sudo ln -sf /usr/bin/python3 /usr/bin/python
+
 # Initialize and update submodules
 git submodule init
 git submodule update
