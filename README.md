@@ -25,7 +25,10 @@ To install TurtleBot3, follow these steps:
 3. Execute Setup Shell Script to clone submodules and build package:
    ```bash
     sudo ~/ProjectTurtleBot3/setup_turtlebot3.sh
-4. Echo package's setup.bash to the .bashrc file
+4. Source setup.bash
+   ```bash
+   source ~/ProjectTurtleBot3/devel/setup.bash
+5. (Optional) Echo package's setup.bash to the .bashrc file
    ```bash
    echo "source ~/ProjectTurtleBot3/devel/setup.bash" >> ~/.bashrc
     
