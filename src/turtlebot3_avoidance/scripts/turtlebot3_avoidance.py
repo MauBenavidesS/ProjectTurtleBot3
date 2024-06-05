@@ -28,19 +28,19 @@ def take_action(regions):
     side_threshold = 0.6
 
     if regions['left'] < side_threshold:
-        state_description = 'case 4 - Turn Right'
+        state_description = 'case 4 - Turn Left'
         linear_x = 0
         angular_z = 0.75
     elif regions['right'] < side_threshold:
-        state_description = 'case 5 - Turn Left'
+        state_description = 'case 5 - Turn Right'
         linear_x = 0
         angular_z = -0.75
     elif regions['front-left'] < side_threshold:
-        state_description = 'case 2 - Sharp Right'
+        state_description = 'case 2 - Sharp Left'
         linear_x = 0.2
         angular_z = 0.75
     elif regions['front-right'] < side_threshold:
-        state_description = 'case 3 - Sharp Left'
+        state_description = 'case 3 - Sharp Right'
         linear_x = 0.2
         angular_z = -0.75
     else:
