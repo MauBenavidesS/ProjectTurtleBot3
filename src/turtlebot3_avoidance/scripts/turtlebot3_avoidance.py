@@ -5,12 +5,13 @@ from sensor_msgs.msg import LaserScan
 from geometry_msgs.msg import Twist
 
 def callbackLaserScan(data):
+    # Averaging ranges for better accuracy
     regions = {
-        'left':   data.ranges[330],
-        'front-left':   data.ranges[350],
-        'front':  data.ranges[0],
-        'front-right':  data.ranges[10],
-        'right':  data.ranges[30],
+        'left':   min(min(data.ranges[330:335]), 10),
+        'front-left':   min(min(data.ranges[350:355]), 10),
+        'front':  min(min(data.ranges[0:5] + data.ranges[355:360]), 10),
+        'front-right':  min(min(data.ranges[5:10]), 10),
+        'right':  min(min(data.ranges[25:30]), 10),
     }
 
     take_action(regions)
