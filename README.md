@@ -26,12 +26,15 @@ To install TurtleBot3, follow these steps:
 3. Execute Setup Shell Script to clone submodules and build package:
    ```bash
     sudo ~/ProjectTurtleBot3/setup_turtlebot3.sh
-4. Source setup.bash
+4. Set the value for the TURTLEBOT3_MODEL environment variable.
    ```bash
-   source ~/ProjectTurtleBot3/devel/setup.bash
-5. (Optional) Echo package's setup.bash to the .bashrc file
+   echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+5. Echo package's setup.bash to the .bashrc file
    ```bash
    echo "source ~/ProjectTurtleBot3/devel/setup.bash" >> ~/.bashrc
+6. Source the ~/.bashrc and setup.bash files.
+   ```bash
+   source ~/.bashrc && source ~/ProjectTurtleBot3/devel/setup.bash
     
 ## Execute TurtleBot3
 1. Launch turtlebot3_world.launch
