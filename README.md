@@ -34,7 +34,7 @@ To install TurtleBot3, follow these steps:
    echo "source ~/ProjectTurtleBot3/devel/setup.bash" >> ~/.bashrc
 6. Source the ~/.bashrc and setup.bash files.
    ```bash
-   source ~/.bashrc && source ~/ProjectTurtleBot3/devel/setup.bash
+   source ~/.bashrc
     
 ## Execute TurtleBot3
 1. Launch turtlebot3_world.launch
